@@ -6,7 +6,7 @@ class LoadFile(object):
         result = []
         with open(self.file_path) as f:
             for line in f.readlines():
-                result.append(line.rstrip())
+                result.append(line.strip())
 
         return result
 
